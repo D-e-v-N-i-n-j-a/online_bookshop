@@ -1,0 +1,31 @@
+.cover_page {
+  width: 100%;
+  height: 400px;
+  background: url("../assets/images/bg4.jpg"),
+  linear-gradient(#eb01a5, #d13531); /* W3C */
+  background-position: center;
+  background-blend-mode: difference;
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.cover_page h1 {
+  font-size: 34px;
+  color: white;
+}
+
+.cover_page button{
+    padding: 20px 30px;
+    width: 200px;
+    background-color: tomato;
+    color: white;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+
+

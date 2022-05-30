@@ -1,0 +1,140 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+nav {
+  width: 90%;
+  margin: auto;
+  /* height: 100px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+/* DISPLAY NONE ON DESKTOP MODE */
+.bars {
+  display: none;
+}
+.logo {
+  flex: 1;
+}
+.logo img {
+  height: 50px;
+  cursor: pointer;
+}
+#mobile{
+  display: none;
+}
+.nav_links {
+  flex: 1;
+  display: flex;
+  justify-content: space-evenly;
+  position: relative;
+  width: 100%;
+}
+.user_accounts {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.user_accounts span {
+  cursor: pointer;
+}
+
+/* TARGET EACH NAV-LINKS */
+.nav_link {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  list-style: none;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 100px;
+  overflow-x: hidden;
+  position: relative;
+}
+.underline {
+  width: 50px;
+  height: 3px;
+  background-color: tomato;
+  position: absolute;
+  bottom: 0;
+  transition: 0.4s ease-in-out;
+  left: -50%;
+}
+
+.nav_link:hover .underline {
+  left: 0;
+  transition: 0.4s ease-out;
+}
+
+@media only screen and (max-width: 750px) {
+  .user_accounts {
+    display: none;
+  }
+  .bars {
+    display: block;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  .bars:hover {
+    color: #66973f;
+  }
+  .nav_links {
+    position: absolute;
+    top: 0;
+    transition: 0.4s ease-in;
+    background-color: #66973f;
+    width: 30;
+    height: 100%;
+    left: -100%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+    
+  }
+  #mobile{
+    display: block;
+    background-color: #6DD2EB;
+    color: #000;
+    width: 100px;
+  }
+  .underline{
+    display: none;
+  }
+  .nav_link{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+  }
+  .openDrawer{
+    position: absolute;
+    top: 0;
+    transition: 0.4s ease-in;
+    background-color: #66973f;
+    width: 50%;
+    height: 100%;
+    left: 0%;
+    display: flex;
+    padding: 0;
+    margin: 0;
+    flex-direction: column;
+    align-items: start;
+    justify-content: flex-start;
+  }
+}

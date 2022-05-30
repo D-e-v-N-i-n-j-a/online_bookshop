@@ -1,13 +1,21 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
-import App from './App';
+import NavRoutes from './routes';
+import './css/index.css';
+import './css/showcase.css';
+import './css/coverpage.css';
+import './css/displaybooks.css';
+import './css/login.css';
+import './css/library.css';
+import './css/category.css';
+import './assets/fonts/cairo.css'
+import './fontawesome/css/all.css'
 import reportWebVitals from './reportWebVitals';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <NavRoutes />
   </React.StrictMode>
 );
 

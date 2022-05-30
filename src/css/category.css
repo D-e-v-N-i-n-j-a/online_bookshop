@@ -1,0 +1,18 @@
+.category_container {
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+  margin: 0;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+.books__categoryModel button {
+  padding: 20px 20px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  margin: 10px;
+}
